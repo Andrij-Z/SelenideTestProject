@@ -20,8 +20,9 @@ public class FirstTestCase {
     @Test
     public void test001(){
         browser = "chrome";
+        baseUrl="https://www.google.com.ua";
 
-        open("https://www.google.com.ua");
+        open("");
         $x(".//input[@id='lst-ib']").sendKeys("Selenide");
         $x(".//input[@id='lst-ib']").pressEnter();
 
